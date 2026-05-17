@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  background: #080706;
+  color: #fff8e8;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.serif { font-family: "Fraunces", serif; }
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f4d58d, #d9a441, #9d5b19);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f4d58d, #d9a441);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #080706; }
+::-webkit-scrollbar-thumb { background: #d9a441; border-radius: 8px; }
+
+/* Split-type char rise (used by SplitReveal) */
+.char {
+  display: inline-block;
+  transform: translateY(110%);
+  animation: rise 0.9s cubic-bezier(.2,.8,.2,1) forwards;
+  animation-delay: calc(var(--char-index, 0) * 0.025s);
+}
+@keyframes rise { to { transform: translateY(0); } }

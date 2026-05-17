@@ -1,0 +1,288 @@
+/* ============================================================
+   Visit Sudan — Design Tokens
+   Cinematic tourism brand. Dark premium grounds, desert gold
+   accents, editorial serifs, generous whitespace.
+   ============================================================ */
+
+/* ============================================================
+   Brand fonts — KOOkies (display) + KoGaliModern (body/utility).
+   Self-hosted .otf. NOT loaded from Google Fonts.
+   ============================================================ */
+
+/* ---------- KOOkies — display ---------- */
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 100; src: url("fonts/KOOkies-Thin.otf")      format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 300; src: url("fonts/KOOkies-Light.otf")     format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 400; src: url("fonts/KOOkies-Regular.otf")   format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 500; src: url("fonts/KOOkies-Medium.otf")    format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 600; src: url("fonts/KOOkies-SemiBold.otf")  format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 700; src: url("fonts/KOOkies-Bold.otf")      format("opentype"); }
+@font-face { font-family: "KOOkies"; font-style: normal; font-display: swap;
+  font-weight: 800; src: url("fonts/KOOkies-ExtraBold.otf") format("opentype"); }
+
+/* ---------- KoGaliModern — sans body + utility ---------- */
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 100; src: url("fonts/KoGaliModern-UltraLight.otf") format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 150; src: url("fonts/KoGaliModern-Thin.otf")       format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 200; src: url("fonts/KoGaliModern-ExtraLight.otf") format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 300; src: url("fonts/KoGaliModern-Light.otf")      format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 400; src: url("fonts/KoGaliModern-Regular.otf")    format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 500; src: url("fonts/KoGaliModern-Medium.otf")     format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 600; src: url("fonts/KoGaliModern-SemiBold.otf")   format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 700; src: url("fonts/KoGaliModern-Bold.otf")       format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 800; src: url("fonts/KoGaliModern-ExtraBold.otf")  format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 850; src: url("fonts/KoGaliModern-Heavy.otf")      format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-style: normal; font-display: swap;
+  font-weight: 900; src: url("fonts/KoGaliModern-Black.otf")      format("opentype"); }
+
+/* ---------- Palestine — Arabic display ---------- */
+@font-face { font-family: "Palestine"; font-style: normal; font-display: swap;
+  font-weight: 400; src: url("fonts/Palestine-Regular.otf") format("opentype"); }
+
+:root {
+  /* ---------- Core palette ---------- */
+  --ink:          #080706; /* Deep Black — main premium ground */
+  --ink-2:        #14110D; /* slightly lifted ink, panels on ink */
+  --ink-3:        #1F1A14; /* tertiary surface on dark */
+  --gold:         #D9A441; /* Desert Gold — primary accent */
+  --gold-soft:    #E8C079; /* hover / tinted gold */
+  --gold-deep:    #A87A22; /* pressed / underline accent */
+  --sand:         #E7C994; /* Sand — soft warm card ground */
+  --sand-2:       #F2DEB4; /* lifted sand */
+  --nile:         #0E5A7A; /* Nile Blue — secondary accent */
+  --nile-deep:    #084156; /* deep nile, footers, callouts */
+  --red:          #B3261E; /* Sudan Red — cultural energy */
+  --ivory:        #FFF8E8; /* Warm Ivory — primary text on dark */
+  --ivory-dim:    rgba(255,248,232,0.72);
+  --ivory-mute:   rgba(255,248,232,0.48);
+  --ivory-line:   rgba(255,248,232,0.14);
+
+  /* ---------- Semantic foreground / surface ---------- */
+  --fg-1:         var(--ivory);         /* primary text on dark */
+  --fg-2:         var(--ivory-dim);     /* secondary text */
+  --fg-3:         var(--ivory-mute);    /* tertiary / captions */
+  --fg-on-sand:   #2A1F12;              /* primary text on sand */
+  --fg-on-gold:   #1A1208;
+  --bg-1:         var(--ink);           /* page ground */
+  --bg-2:         var(--ink-2);         /* card / section ground */
+  --bg-3:         var(--ink-3);         /* nested */
+  --bg-sand:      var(--sand);
+  --bg-ivory:     var(--ivory);
+
+  --line:         var(--ivory-line);    /* hairline on dark */
+  --line-warm:    rgba(42,31,18,0.16);  /* hairline on sand/ivory */
+
+  /* ---------- Type stacks ---------- */
+  --font-display: "KOOkies", "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-sans:    "KoGaliModern", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:    "KoGaliModern", "Space Grotesk", "JetBrains Mono", ui-monospace, monospace; /* used for eyebrows + meta */
+  --font-display-ar: "Palestine", "Amiri", "Noto Naskh Arabic", "Times New Roman", serif;
+  --font-sans-ar:    "KoGaliModern", "Noto Naskh Arabic", "Amiri", system-ui, sans-serif;
+
+  /* ---------- Type scale (fluid, editorial) ---------- */
+  --fs-hero:    clamp(64px, 9vw, 144px);   /* full-bleed hero */
+  --fs-display: clamp(48px, 6vw, 96px);    /* page openers */
+  --fs-h1:      clamp(40px, 4.4vw, 72px);
+  --fs-h2:      clamp(32px, 3.2vw, 52px);
+  --fs-h3:      clamp(24px, 2.2vw, 36px);
+  --fs-h4:      20px;
+  --fs-lead:    22px;   /* opening paragraph */
+  --fs-body:    17px;
+  --fs-small:   15px;
+  --fs-caption: 13px;
+  --fs-eyebrow: 12px;
+
+  /* ---------- Line height ---------- */
+  --lh-tight:   1.02;
+  --lh-snug:    1.12;
+  --lh-display: 1.06;
+  --lh-body:    1.55;
+  --lh-loose:   1.7;
+
+  /* ---------- Letter spacing ---------- */
+  --tr-tight:    -0.03em;  /* big serif headlines */
+  --tr-snug:     -0.015em;
+  --tr-normal:   0;
+  --tr-eyebrow:  0.22em;   /* uppercase nav / labels */
+  --tr-button:   0.14em;
+
+  /* ---------- Spacing (8pt with editorial extensions) ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+  --s-11: 192px;  /* section gutters */
+
+  /* ---------- Radius ---------- */
+  --r-xs:  4px;
+  --r-sm:  8px;
+  --r-md:  14px;
+  --r-lg:  22px;
+  --r-xl:  32px;
+  --r-pill: 999px;
+
+  /* ---------- Shadow / elevation ---------- */
+  --shadow-1: 0 1px 2px rgba(0,0,0,.4);
+  --shadow-2: 0 12px 32px -16px rgba(0,0,0,.55);
+  --shadow-3: 0 32px 80px -24px rgba(0,0,0,.6);
+  --shadow-glow: 0 0 0 1px rgba(217,164,65,.35), 0 12px 40px -8px rgba(217,164,65,.35);
+
+  /* ---------- Glass ---------- */
+  --glass-bg:    rgba(20,17,13,0.55);
+  --glass-bg-2:  rgba(255,248,232,0.08);
+  --glass-blur:  blur(18px) saturate(140%);
+  --glass-line:  rgba(255,248,232,0.18);
+
+  /* ---------- Gradients ---------- */
+  --grad-sunset:    linear-gradient(180deg, #E7C994 0%, #D9A441 38%, #B3261E 78%, #2A1208 100%);
+  --grad-dune:      linear-gradient(180deg, #1F1A14 0%, #080706 100%);
+  --grad-nile:      linear-gradient(180deg, #0E5A7A 0%, #084156 60%, #080706 100%);
+  --grad-protect:   linear-gradient(180deg, rgba(8,7,6,0) 0%, rgba(8,7,6,0.85) 100%);
+
+  /* ---------- Motion ---------- */
+  --ease-cinematic: cubic-bezier(.22, .61, .36, 1);  /* slow-in soft-out */
+  --ease-warm:      cubic-bezier(.4, 0, .2, 1);
+  --dur-fast:   180ms;
+  --dur-base:   340ms;
+  --dur-slow:   620ms;
+  --dur-scroll: 900ms;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ============================================================
+   Semantic type classes
+   ============================================================ */
+.hero-display, h1.hero {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-hero);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tr-tight);
+  text-wrap: balance;
+}
+
+.h1-display, h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-tight);
+  text-wrap: balance;
+}
+
+.h2, h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tr-snug);
+  text-wrap: balance;
+}
+
+.h3, h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  line-height: 1.18;
+  letter-spacing: var(--tr-snug);
+}
+
+.h4, h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h4);
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+.lead {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: var(--fs-lead);
+  line-height: 1.45;
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+
+.body, p {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-2);
+  text-wrap: pretty;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+  color: var(--fg-3);
+  letter-spacing: 0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.nav-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+}
+
+.button-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: var(--tr-button);
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.ink-bg   { background: var(--bg-1); color: var(--fg-1); }
+.sand-bg  { background: var(--bg-sand); color: var(--fg-on-sand); }
+.ivory-bg { background: var(--bg-ivory); color: var(--fg-on-sand); }
+.hairline { border-top: 1px solid var(--line); }
+.hairline-warm { border-top: 1px solid var(--line-warm); }
