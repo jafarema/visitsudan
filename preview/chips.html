@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+body { padding: 24px; }
+.section { margin-bottom: 18px; }
+.lbl { font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,248,232,0.45); margin-bottom: 10px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: "Inter", sans-serif; font-size: 12px; font-weight: 500;
+  padding: 7px 14px; border-radius: 999px; }
+.chip.gold { background: #D9A441; color: #1A1208; }
+.chip.outline { background: transparent; color: #FFF8E8; box-shadow: inset 0 0 0 1px rgba(255,248,232,0.28); }
+.chip.outline.active { box-shadow: inset 0 0 0 1px #D9A441; color: #D9A441; }
+.chip.glass { background: rgba(20,17,13,0.55); color: #FFF8E8;
+  backdrop-filter: blur(12px); box-shadow: inset 0 0 0 1px rgba(255,248,232,0.18); }
+.chip.red { background: rgba(179,38,30,0.18); color: #D14034; box-shadow: inset 0 0 0 1px rgba(179,38,30,0.4); }
+.chip.nile { background: rgba(14,90,122,0.22); color: #5BB3CE; box-shadow: inset 0 0 0 1px rgba(14,90,122,0.5); }
+.chip .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: currentColor; margin-right: 8px; vertical-align: middle; }
+</style></head>
+<body>
+  <div class="eyebrow">Chips · filters &amp; tags</div>
+  <div class="section" style="margin-top: 12px;">
+    <div class="lbl">Filter set · single-select</div>
+    <div class="row">
+      <span class="chip outline active">All</span>
+      <span class="chip outline">Ancient sites</span>
+      <span class="chip outline">Red Sea</span>
+      <span class="chip outline">Desert</span>
+      <span class="chip outline">Culture</span>
+      <span class="chip outline">Nile</span>
+    </div>
+  </div>
+  <div class="section">
+    <div class="lbl">Status tags</div>
+    <div class="row">
+      <span class="chip gold"><span class="dot"></span>Featured</span>
+      <span class="chip red">Limited window</span>
+      <span class="chip nile">Best Oct–Mar</span>
+      <span class="chip glass">2,500 years old</span>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+body { padding: 24px; }
+.hero { position: relative; border-radius: 22px; overflow: hidden;
+  height: 290px;
+  background:
+    linear-gradient(180deg, rgba(8,7,6,0) 30%, rgba(8,7,6,0.88) 100%),
+    linear-gradient(180deg, #c47928 0%, #6a2f10 60%, #1a0d05 100%);
+}
+.grain { position: absolute; inset: 0; opacity: 0.07; mix-blend-mode: overlay; pointer-events: none;
+  background-image:
+    repeating-radial-gradient(circle at 30% 30%, rgba(255,248,232,0.6) 0px, transparent 1.5px),
+    repeating-radial-gradient(circle at 70% 70%, rgba(255,248,232,0.4) 0px, transparent 1.2px);
+  background-size: 6px 6px, 5px 5px; }
+.tag { position: absolute; top: 18px; left: 22px;
+  font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: #FFF8E8;
+  background: rgba(20,17,13,0.55); backdrop-filter: blur(12px);
+  padding: 7px 12px; border-radius: 999px;
+  box-shadow: inset 0 0 0 1px rgba(255,248,232,0.18); }
+.meta-right { position: absolute; top: 22px; right: 22px;
+  font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: rgba(255,248,232,0.55); }
+.content { position: absolute; left: 24px; right: 24px; bottom: 22px; }
+.eb { font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.22em;
+  text-transform: uppercase; color: #D9A441; }
+.h { font-family: "Fraunces", serif; font-size: 44px; line-height: 1.02; letter-spacing: -0.03em;
+  color: #FFF8E8; font-variation-settings: "opsz" 144; margin-top: 6px; font-weight: 400; max-width: 480px; }
+.dek { font-family: "Inter"; font-size: 13px; color: rgba(255,248,232,0.7); margin-top: 8px; max-width: 380px; }
+</style></head>
+<body>
+  <div class="eyebrow">Hero · full-bleed cinematic with protection gradient</div>
+  <div class="hero" style="margin-top: 12px;">
+    <div class="grain"></div>
+    <div class="tag">Meroë · Northern State</div>
+    <div class="meta-right">01 / 06</div>
+    <div class="content">
+      <div class="eb">Ancient Nubia</div>
+      <div class="h">Where the pyramids outnumber Egypt's.</div>
+      <div class="dek">A 7-day journey from Khartoum through the eastern desert.</div>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+body { padding: 24px; }
+.stage { position: relative; border-radius: 22px; overflow: hidden;
+  background: linear-gradient(180deg,#3a2a14 0%,#1a0e06 100%); height: 250px;
+  display: flex; flex-direction: column; }
+.nav { display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px; margin: 12px;
+  background: rgba(20,17,13,0.55); backdrop-filter: blur(18px) saturate(140%);
+  border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(255,248,232,0.18); }
+.brand { font-family: "Fraunces", serif; font-size: 18px; color: #FFF8E8;
+  letter-spacing: -0.01em; font-variation-settings: "opsz" 144; }
+.brand b { color: #D9A441; font-weight: 500; }
+.links { display: flex; gap: 22px; }
+.links a { font-family: "Inter", sans-serif; font-weight: 600; font-size: 11px;
+  letter-spacing: 0.22em; text-transform: uppercase; color: #FFF8E8;
+  text-decoration: none; }
+.cta { font-family: "Inter", sans-serif; font-weight: 600; font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  background: #D9A441; color: #1A1208; padding: 8px 16px; border-radius: 999px; }
+.spacer { flex: 1; }
+.cap { font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,248,232,0.55);
+  padding: 0 32px 18px; }
+</style></head>
+<body>
+  <div class="eyebrow">Sticky nav · glass over imagery</div>
+  <div class="stage" style="margin-top: 12px;">
+    <nav class="nav">
+      <div class="brand">Visit <b>Sudan</b></div>
+      <div class="links">
+        <a>Destinations</a><a>Experiences</a><a>Culture</a><a>Guide</a><a>Gallery</a>
+      </div>
+      <a class="cta">Plan your trip</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="cap">rgba(20,17,13,0.55) · blur(18px) saturate(140%) · 1px ivory/18 border</div>
+  </div>
+</body></html>

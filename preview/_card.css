@@ -1,0 +1,75 @@
+/* Shared frame styles for design-system preview cards.
+   Each card targets 700w × ~variable height; the asset name renders OUTSIDE the card. */
+
+/* ============================================================
+   Brand fonts — KOOkies (display) + KoGaliModern (body/utility).
+   Self-hosted .otf, paths relative to /preview/.
+   ============================================================ */
+@font-face { font-family: "KOOkies"; font-weight: 100; font-display: swap;
+  src: url("../fonts/KOOkies-Thin.otf")      format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 300; font-display: swap;
+  src: url("../fonts/KOOkies-Light.otf")     format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 400; font-display: swap;
+  src: url("../fonts/KOOkies-Regular.otf")   format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 500; font-display: swap;
+  src: url("../fonts/KOOkies-Medium.otf")    format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 600; font-display: swap;
+  src: url("../fonts/KOOkies-SemiBold.otf")  format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 700; font-display: swap;
+  src: url("../fonts/KOOkies-Bold.otf")      format("opentype"); }
+@font-face { font-family: "KOOkies"; font-weight: 800; font-display: swap;
+  src: url("../fonts/KOOkies-ExtraBold.otf") format("opentype"); }
+
+@font-face { font-family: "KoGaliModern"; font-weight: 100; font-display: swap;
+  src: url("../fonts/KoGaliModern-UltraLight.otf") format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 150; font-display: swap;
+  src: url("../fonts/KoGaliModern-Thin.otf")       format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 200; font-display: swap;
+  src: url("../fonts/KoGaliModern-ExtraLight.otf") format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 300; font-display: swap;
+  src: url("../fonts/KoGaliModern-Light.otf")      format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 400; font-display: swap;
+  src: url("../fonts/KoGaliModern-Regular.otf")    format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 500; font-display: swap;
+  src: url("../fonts/KoGaliModern-Medium.otf")     format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 600; font-display: swap;
+  src: url("../fonts/KoGaliModern-SemiBold.otf")   format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 700; font-display: swap;
+  src: url("../fonts/KoGaliModern-Bold.otf")       format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 800; font-display: swap;
+  src: url("../fonts/KoGaliModern-ExtraBold.otf")  format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 850; font-display: swap;
+  src: url("../fonts/KoGaliModern-Heavy.otf")      format("opentype"); }
+@font-face { font-family: "KoGaliModern"; font-weight: 900; font-display: swap;
+  src: url("../fonts/KoGaliModern-Black.otf")      format("opentype"); }
+
+/* ---------- Palestine — Arabic display ---------- */
+@font-face { font-family: "Palestine"; font-weight: 400; font-display: swap;
+  src: url("../fonts/Palestine-Regular.otf") format("opentype"); }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  background: #080706;
+  color: #FFF8E8;
+  font-family: "KoGaliModern", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+body {
+  padding: 24px 28px;
+  min-height: 100vh;
+}
+.eyebrow {
+  font-family: "KoGaliModern", monospace;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #D9A441;
+}
+.display {
+  font-family: "KOOkies", "Fraunces", serif;
+}
+.mono { font-family: "KoGaliModern", monospace; }
+.dim { color: rgba(255,248,232,0.55); }
+.row { display: flex; align-items: center; gap: 12px; }

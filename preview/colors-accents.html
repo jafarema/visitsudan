@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+.tone { display: grid; grid-template-rows: 1fr auto auto auto; border-radius: 16px; overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(255,248,232,0.10); }
+.tone .lead { padding: 18px; min-height: 96px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  font-family: "Space Grotesk", monospace; text-transform: uppercase;
+  letter-spacing: 0.12em; font-size: 12px; font-weight: 600; }
+.tone .sub { padding: 10px 14px; font-family: "Space Grotesk", monospace; font-size: 10px;
+  letter-spacing: 0.05em; display:flex; justify-content: space-between; }
+</style></head>
+<body>
+  <div class="eyebrow">Accent ramps</div>
+  <div class="grid">
+    <div class="tone">
+      <div class="lead" style="background:#D9A441;color:#1A1208">Gold</div>
+      <div class="sub" style="background:#E8C079;color:#1A1208"><span>soft</span><span>#E8C079</span></div>
+      <div class="sub" style="background:#D9A441;color:#1A1208"><span>base</span><span>#D9A441</span></div>
+      <div class="sub" style="background:#A87A22;color:#FFF8E8"><span>deep</span><span>#A87A22</span></div>
+    </div>
+    <div class="tone">
+      <div class="lead" style="background:#0E5A7A;color:#FFF8E8">Nile</div>
+      <div class="sub" style="background:#1A7A9B;color:#FFF8E8"><span>soft</span><span>#1A7A9B</span></div>
+      <div class="sub" style="background:#0E5A7A;color:#FFF8E8"><span>base</span><span>#0E5A7A</span></div>
+      <div class="sub" style="background:#084156;color:#FFF8E8"><span>deep</span><span>#084156</span></div>
+    </div>
+    <div class="tone">
+      <div class="lead" style="background:#B3261E;color:#FFF8E8">Red</div>
+      <div class="sub" style="background:#D14034;color:#FFF8E8"><span>soft</span><span>#D14034</span></div>
+      <div class="sub" style="background:#B3261E;color:#FFF8E8"><span>base</span><span>#B3261E</span></div>
+      <div class="sub" style="background:#7A1812;color:#FFF8E8"><span>deep</span><span>#7A1812</span></div>
+    </div>
+  </div>
+</body></html>

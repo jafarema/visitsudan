@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+body { padding: 28px; }
+.row { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn {
+  font-family: "Inter", sans-serif; font-weight: 600; font-size: 13px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 14px 26px; border-radius: 999px; border: none; cursor: pointer;
+  transition: all 220ms cubic-bezier(.22,.61,.36,1);
+}
+.btn.primary { background: #D9A441; color: #1A1208; }
+.btn.primary:hover { background: #E8C079; box-shadow: 0 0 0 1px rgba(217,164,65,.4), 0 12px 40px -8px rgba(217,164,65,.45); }
+.btn.outline { background: transparent; color: #FFF8E8; box-shadow: inset 0 0 0 1px rgba(255,248,232,0.32); }
+.btn.outline:hover { box-shadow: inset 0 0 0 1px #D9A441; color: #D9A441; }
+.btn.ghost { background: transparent; color: #FFF8E8; padding: 14px 8px; }
+.btn.ghost::after { content: ""; display: block; height: 1px; background: #D9A441; margin-top: 6px;
+  width: 100%; transform-origin: left; transform: scaleX(0.3); transition: transform 220ms;}
+.btn.ghost:hover::after { transform: scaleX(1); }
+.btn.red { background: #B3261E; color: #FFF8E8; }
+.btn.glass { background: rgba(20,17,13,0.55); backdrop-filter: blur(18px) saturate(140%);
+  color: #FFF8E8; box-shadow: inset 0 0 0 1px rgba(255,248,232,0.18); }
+.lbl { font-family: "Space Grotesk", monospace; font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,248,232,0.45); margin-bottom: 10px; }
+.block { display: flex; flex-direction: column; }
+.row + .row { margin-top: 18px; }
+</style></head>
+<body>
+  <div class="eyebrow">Buttons · primary / outline / ghost / red / glass</div>
+  <div style="margin-top: 16px;">
+    <div class="row">
+      <div class="block"><div class="lbl">Primary</div><button class="btn primary">Plan your trip</button></div>
+      <div class="block"><div class="lbl">Outline</div><button class="btn outline">See the route</button></div>
+      <div class="block"><div class="lbl">Ghost</div><button class="btn ghost">Read the story →</button></div>
+    </div>
+    <div class="row">
+      <div class="block"><div class="lbl">Red · cultural</div><button class="btn red">Begin the journey</button></div>
+      <div class="block"><div class="lbl">Glass · on imagery</div><button class="btn glass">Watch the film</button></div>
+    </div>
+  </div>
+</body></html>

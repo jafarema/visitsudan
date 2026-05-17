@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  body { padding: 28px 32px; }
+  .header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 22px;
+  }
+  .name {
+    font-family: "KOOkies", serif; font-weight: 400;
+    font-size: 38px; letter-spacing: -0.02em; color: #FFF8E8;
+  }
+  .name em { color: #D9A441; font-style: normal; font-weight: 500; }
+  .row {
+    display: flex; align-items: baseline; gap: 22px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(255,248,232,0.08);
+  }
+  .row:first-of-type { border-top: 1px solid rgba(255,248,232,0.18); }
+  .tag {
+    font-family: "KoGaliModern", monospace; font-weight: 500;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(255,248,232,0.45); width: 110px; flex: none;
+  }
+  .spec { font-family: "KOOkies", serif; color: #FFF8E8; flex: 1; }
+  .h-hero    { font-size: 68px;  line-height: 1.00; letter-spacing: -0.035em; font-weight: 400; }
+  .h-display { font-size: 44px;  line-height: 1.04; letter-spacing: -0.03em;  font-weight: 400; }
+  .h-h2      { font-size: 30px;  line-height: 1.08; letter-spacing: -0.02em;  font-weight: 500; }
+  .h-h3      { font-size: 22px;  line-height: 1.16; letter-spacing: -0.01em;  font-weight: 600; }
+  .meta {
+    margin-left: auto; align-self: center;
+    font-family: "KoGaliModern", monospace; font-size: 11px;
+    color: rgba(255,248,232,0.5); white-space: nowrap;
+  }
+  .weights {
+    margin-top: 28px; padding-top: 22px;
+    border-top: 1px solid rgba(255,248,232,0.08);
+    display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px;
+    font-family: "KOOkies", serif; color: #FFF8E8;
+    font-size: 28px; letter-spacing: -0.02em;
+    text-align: center;
+  }
+  .weights span small {
+    display: block; margin-top: 6px;
+    font-family: "KoGaliModern", monospace; font-size: 9px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(255,248,232,0.4);
+  }
+</style></head>
+<body>
+  <div class="header">
+    <div class="eyebrow">Display · Latin</div>
+    <div class="name"><em>KOOkies</em> · brand display</div>
+  </div>
+
+  <div class="row">
+    <div class="tag">Hero</div>
+    <div class="spec h-hero">The Nile begins twice</div>
+    <div class="meta">68 · 400 · -.035em</div>
+  </div>
+  <div class="row">
+    <div class="tag">Display</div>
+    <div class="spec h-display">Where pyramids outnumber Egypt's</div>
+    <div class="meta">44 · 400 · -.03em</div>
+  </div>
+  <div class="row">
+    <div class="tag">H2</div>
+    <div class="spec h-h2">Coffee, then the desert.</div>
+    <div class="meta">30 · 500 · -.02em</div>
+  </div>
+  <div class="row">
+    <div class="tag">H3</div>
+    <div class="spec h-h3">You will be the only one there.</div>
+    <div class="meta">22 · 600 · -.01em</div>
+  </div>
+
+  <div class="weights">
+    <span style="font-weight:100">Aa<small>100 · Thin</small></span>
+    <span style="font-weight:300">Aa<small>300 · Light</small></span>
+    <span style="font-weight:400">Aa<small>400 · Regular</small></span>
+    <span style="font-weight:500">Aa<small>500 · Medium</small></span>
+    <span style="font-weight:600">Aa<small>600 · SemiBold</small></span>
+    <span style="font-weight:700">Aa<small>700 · Bold</small></span>
+    <span style="font-weight:800">Aa<small>800 · ExtraBold</small></span>
+  </div>
+</body></html>
